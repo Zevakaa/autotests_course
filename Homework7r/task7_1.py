@@ -30,17 +30,11 @@ class Segment:
 
     def x_axis_intersection(self) -> bool:
         """ Проверка пересечения оси Х """
-        res = False
-        if (self.X1 <= 0 <= self.X2) or (self.X2 <= 0 <= self.X1):
-            res = True
-        return res
+        return (self.X1 <= 0 <= self.X2) or (self.X2 <= 0 <= self.X1)
 
     def y_axis_intersection(self) -> bool:
         """ Проверка пересечения оси У """
-        res = False
-        if (self.Y1 <= 0 <= self.Y2) or (self.Y2 <= 0 <= self.Y1):
-            res = True
-        return res
+        return (self.Y1 <= 0 <= self.Y2) or (self.Y2 <= 0 <= self.Y1)
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
