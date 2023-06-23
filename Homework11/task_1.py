@@ -14,6 +14,7 @@ try:
     header = driver.find_element(By.CSS_SELECTOR, '.sbisru-Header__menu-link[href="/contacts"]')
     header.click()
     sleep(1)
+    assert "https://sbis.ru/contacts" in driver.current_url, "Текущий раздел не Контакты"
 
     # Поиск баннера Тензор, клик по нему
     # Переход на https://tensor.ru/
